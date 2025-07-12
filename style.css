@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+html{
+    font-size: 62.5%;
+    /* background: white; */
+    background: lightblue;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* ############## utility classes ################## */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.btn-primary{
+    color: #000000;
+    /* background: white; */
+    background: lightblue;
+}
+/* ########### navbar styling ########### */
+/* for desktop mode */
+
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.navbar{
+    /* xaxis, yaxis, blur, spread, color */
+    box-shadow: 0px 5px 10px 0px ;
+    position: fixed;
+    width: 100%;
+    background-color: lightblue;
+    color: #000;
+    /* opacity is used for transparency */
+    opacity: .85;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.menu-items li{
+    list-style-type: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.logo{
+    order: 1;
+    font-size: 3.5rem;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar a:hover, .logo:hover{
+    color: white;
+}
+
+
+/* ######## showcase styling ############## */
+.showcase-area{
+    height: 100vh;
+    background: url("./img/Messi8.jpg");
+    background-size: contain;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+.showcase-container h1{
+    text-transform: uppercase;
+    /* color: white; */
+    color: lightblue;
+    /* margin-bottom: 160px; */
+    text-align: center;
+}
+.showcase-container p{
+    /* color:white; */
+    color:lightblue;
+    padding: 20px; 
+    /* margin-top: 30px; */
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ############### About  ######################## */
+#about{
+    padding: 50px 0px;
+}
+#achivements{
+    padding: 50px 0px;
+}
+.about-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.achivements-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about h1{
+    font-size: 3.2rem;
+}
+#achivements h1{
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#about h2{
+    font-size: 2.4rem;
+}
+#achivements h2, h3{
+    font-size: 2.4rem;
+}
+#about p{
+    font-size: 1.6rem;
+}
+#achivements p{
+    font-size: 1.6rem;
+}
+
+#about .small{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.achivements-text{
+     flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+}
+.about-img{
+    flex: 1 1 400px;
+    padding: 30px;
+    /* transform: translateX(150%); */
+    /* animation: about-img-animation 1s ease-in-out forwards; */
+}
+/* @keyframes about-img-animation{
+    100%{
+        transform: translate(0);
+    }
+} */
+.about-text{
+     flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+     /* animation: about-text-animation 1s ease-in-out forwards;
+         transform: translateX(-150%); */
+}
+/* @keyframes about-text-animation{
+     100%{
+        transform: translate(0);
+    }
+} */
+.about-img img{
+    display: block;
+    height: 800px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ############# career stats ################### */
+#career{
+    padding: 5rem 0 10rem 0;
+}
+#career h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.career-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.career-container img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.img-content a{
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.img-content{
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* opacity: 0; */
+    z-index: 2;
+    text-align: center;
+}
+.img-content h3{
+    color: white;
+    font-size: 3rem;
+}
+
+.messi-career{
+    font-size: 2rem;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* ################## contact us styling ######################## */
+
+#contact{
+    padding: 5rem 0;
+}
+.contact-container{
+    display:flex ;
+    background: white;
+}
+.contact-image{
+    width: 50%;
+}
+.contact-image img{
+    display: block;
+    height: 400px;
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+.form-container{
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+.form-container input, textarea{
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    font-weight: 500;
+    
+}
+.form-container .btn{
+    background: #000000;
+    color: white;
+}
+
+#footer h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+    font-weight:500;
+    color: white;
+    background: black;
+}
+
+/* ################# media query ###################### */
+
+@media(max-width: 768px){
+    .navbar{
+        opacity: .95;
+    }
+    .navbar-container input[type='checkbox'], 
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+    .navbar-container input[type='checkbox']{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 32px;
+        width: 41px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: black;
+    }
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transorm 0.4s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: lightblue;
+        height: 100vh;
+        max-width: 300px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 1opx 0px lightblue;
+    }
+    .navbar .menu-items li{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 3rem;
+    }
+    .navbar-container input[type = 'checkbox']:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+    .navbar-container input[type = 'checkbox']:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+    .navbar-container input[type = 'checkbox']:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+    .navbar-container input[type = 'checkbox']:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }   
+}
+
+/* ############### career ################## */
+.career-container{
+    /* flex-direction: column; */
+    align-items: stretch;
+}
+/* .messi-career:not(:last-child){
+    margin-bottom: 3rem;
+} */
+
+/* ############## small screen ############## */
+@media(max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+    .messi-career{
+        flex-direction: column;
+        text-align: center;
+    }
+}
